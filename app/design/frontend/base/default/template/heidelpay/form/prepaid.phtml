@@ -1,0 +1,17 @@
+<fieldset class="form-list">
+    <?php $_code=$this->getMethodCode()?>
+    <ul id="payment_form_<?php echo $_code?>" style="display:none">
+        <li>
+            <div class="input-box"><?php echo $this->__('DescPrepaid')?><?php echo $this->getMethod()->getLightbox(false);?></div>
+        </li>
+    </ul>
+</fieldset>
+<script type="text/javascript">
+	if($$('#checkout-payment-method-load #p_method_<?php print $_code; ?>').length > 0){
+		$('checkout-payment-method-load').observe('change', function(event){
+			if($('p_method_<?php print $_code; ?>').checked){
+				$$('#payment-buttons-container button').first().show();
+			}
+		});
+	}
+</script>

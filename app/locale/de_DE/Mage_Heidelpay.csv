@@ -1,0 +1,145 @@
+"Creditcard (Heidelpay)","Kreditkarte (Heidelpay)"
+"Dear {NAME}, you used the following creditcard on your last visit. Do you want to re-use it?","Sehr geehrter Herr {NAME}, beim letzten Besuch haben Sie folgende Kreditkarte verwendet, m&ouml;chten Sie diese wieder verwenden?"
+"Yes, I want to re-use my creditcard.","Ja, Ich m&ouml;chte meine Kreditkarte erneut benutzen."
+"Re-use last creditcard.","Letzte Kreditkarte nutzen."
+
+"Debitcard (Heidelpay)","Debitkarte (Heidelpay)"
+"Dear {NAME}, you used the following debitcard on your last visit. Do you want to re-use it?","Sehr geehrter Herr {NAME}, beim letzten Besuch haben Sie folgende Debitkarte verwendet, m&ouml;chten Sie diese wieder verwenden?"
+"Yes, I want to re-use my debitcard.","Ja, Ich m&ouml;chte meine Debitkarte erneut benutzen."
+"Re-use last debitcard.","Letzte Debitkarte nutzen."
+
+"Creditcard X (Heidelpay)","Kreditkarte X (Heidelpay)"
+"Dear {NAME}, you used the following creditcard X on your last visit. Do you want to re-use it?","Sehr geehrter Herr {NAME}, beim letzten Besuch haben Sie folgende Kreditkarte X verwendet, m&ouml;chten Sie diese wieder verwenden?"
+"Yes, I want to re-use my creditcard X.","Ja, Ich m&ouml;chte meine Kreditkarte X erneut benutzen."
+"Re-use last creditcard X.","Letzte Kreditkarte X nutzen."
+
+"Your order has been received.","Ihre Bestellung ist eingegangen."
+"Please enter additional payment information.","Geben Sie weitere Zahlungsinformationen ein."
+
+"Direct Booking","Sofortbuchung"
+"Preauthorisation","Reservierung"
+"Direct Data Input","Direkteingabe der Kontodaten"
+"Account Data from last Giropay Booking","Kontodaten von letzter Zahlung mit Giropay"
+"Account Data from last Sofort Banking Booking","Kontodaten von letzter Zahlung mit Sofortueberweisung"
+"Account Data from last Sofort Banking or Giropay Booking","Kontodaten von letzter Zahlung mit Giropay oder Sofortueberweisung"
+"Direct with registration","Direkt mit Registrierung"
+"After without registration","Nachgelagert ohne Registrierung"
+
+"Credit Card","Kreditkarte"
+"Credit Card X","Kreditkarte X"
+"Debit Card","Debitkarte"
+"Debitcard","Debitkarte"
+"Direct Debit","Lastschrift"
+"SOFORT &Üuml;berweisung","SOFORT &Üuml;berweisung"
+"Giropay","Giropay"
+"Pay Pal","Pay Pal"
+"EPS","EPS"
+"iDeal","iDeal"
+"Prepayment","Vorkasse"
+"Invoice","Rechnung"
+"Mangirkart","MangirKart"
+"BillSafe","Kauf auf Rechnung"
+"Barpay","BarPay"
+
+"Heidelpay Credit Card","Heidelpay Kreditkarte"
+"Heidelpay Credit Card X","Heidelpay Kreditkarte X"
+"Heidelpay Debit Card","Heidelpay Debitkarte"
+"Heidelpay Debitcard","Heidelpay Debitkarte"
+"Heidelpay Direct Debit","Heidelpay Lastschrift"
+"Heidelpay SOFORT Überweisung","Heidelpay SOFORT Überweisung"
+"Heidelpay Giropay","Heidelpay Giropay"
+"Heidelpay Pay Pal","Heidelpay Pay Pal"
+"Heidelpay EPS","Heidelpay EPS"
+"Heidelpay iDeal","Heidelpay iDeal"
+"Heidelpay Prepayment","Heidelpay Vorkasse"
+"Heidelpay Invoice","Heidelpay Rechnung"
+"Heidelpay Mangirkart","Heidelpay MangirKart"
+"Heidelpay Billsafe","Heidelpay BillSAFE"
+"Heidelpay Barpay","Heidelpay BarPay"
+
+"DescCreditCard","Sicher zahlen mit Kreditkarte<br><br>"
+"DescCreditCardX","Sicher zahlen mit Kreditkarte X<br><br>"
+"DescDebitCard","Sicher zahlen mit Debitkarte<br><br>"
+"DescDirectDebit","Sicher zahlen mit Lastschrift<br><br>"
+"DescEPS","Sicher zahlen mit EPS"
+"DescGiropay","Sicher zahlen mit Giropay"
+"DescIdeal","Sicher zahlen mit iDeal"
+"DescPayPal","Sicher zahlen mit PayPal"
+"DescPrepaid","Sicher zahlen mit Vorkasse"
+"DescDirectEBanking","Sicher zahlen mit Sofort&uuml;berweisung"
+"DescInvoice","Zahlen Sie bequem mit Rechnung"
+"DescMangirkart","Zahlen Sie bequem mit MangirKart"
+"DescBillsafe","Kaufen Sie jetzt auf Rechnung und begutachten Sie Ihre Eink&auml;ufe in Ruhe bevor Sie bezahlen. <br/>"
+"DescBarpay","Zahlen Sie bequem mit BarPay"
+
+
+"No.","Nr."
+"Valid until:","G&uuml;ltig bis:"
+"close","schliessen"
+"Cardtype:","Kartentyp:"
+"Account No","Konto"
+"Bankcode","BLZ"
+"IBAN","IBAN"
+"BIC","BIC"
+"Owner","Inhaber"
+"Please enter account no.","Bitte Konto angeben."
+"Please enter bankcode.","Bitte BLZ angeben."
+"Please enter owner.","Bitte Inhaber angeben."
+"Enter additional information for the payment.","Geben Sie weitere Zahlungsinformationen ein."
+"HP_SUCCESS_PREPAID","Ihre Transaktion war erfolgreich!
+
+            Ueberweisen Sie uns den Betrag von {CURRENCY} {AMOUNT} auf folgendes Konto
+            Land :         {ACC_COUNTRY}
+            Kontoinhaber : {ACC_OWNER}
+            Konto-Nr. :    {ACC_NUMBER}
+            Bankleitzahl:  {ACC_BANKCODE}
+            IBAN:          {ACC_IBAN}
+            BIC:           {ACC_BIC}
+            Geben sie bitte im Verwendungszweck UNBEDINGT die Identifikationsnummer
+        {SHORTID}
+        und NICHTS ANDERES an."
+"HP_SUCCESS_INVOICE","Ihre Transaktion war erfolgreich!
+
+            Ueberweisen Sie uns den Betrag von {CURRENCY} {AMOUNT} auf folgendes Konto
+            Land :         {ACC_COUNTRY}
+            Kontoinhaber : {ACC_OWNER}
+            Konto-Nr. :    {ACC_NUMBER}
+            Bankleitzahl:  {ACC_BANKCODE}
+            IBAN:          {ACC_IBAN}
+            BIC:           {ACC_BIC}
+            Geben sie bitte im Verwendungszweck UNBEDINGT die Identifikationsnummer
+        {SHORTID}
+        und NICHTS ANDERES an."
+
+"HP_SUCCESS_BILLSAFE","Ihre Transaktion war erfolgreich!
+
+            Ueberweisen Sie uns den Betrag von {CURRENCY} {AMOUNT} auf folgendes Konto
+            Bankname:      {ACC_BANKNAME}
+            Kontoinhaber : {ACC_OWNER}
+            Konto-Nr. :    {ACC_NUMBER}
+            Bankleitzahl:  {ACC_BANKCODE}
+            IBAN:          {ACC_IBAN}
+            BIC:           {ACC_BIC}
+            Geben sie bitte im Verwendungszweck UNBEDINGT die Identifikationsnummer
+        {SHORTID}
+        und NICHTS ANDERES an."
+"HP_LEGALNOTE_BILLSAFE","Bitte überweisen Sie den ausstehenden Betrag {DAYS} Tage nach dem Sie über den Versand informiert wurden."
+
+"HP_BARPAY_INFO","Sicher, schnell und ohne Geb&uuml;hren: mit BarPay zahlen Sie Internet-Eink&auml;ufe mit Bargeld. Ohne Anmeldung. Ohne Kreditkarte. Ohne Kontodetails.<br><br>Nach Auswahl von BarPay &uuml;bermittelt Ihnen Ihr Online-H&auml;ndler einen individuellen Barcode per E-Mail oder zum Download auf Ihren Computer. Diesen k&ouml;nnen Sie ausdrucken und in &uuml;ber 18.000 BarPay-Akzeptanzstellen bezahlen. Der Zahlungseingang wird dem Online-H&auml;ndler in Echtzeit &uuml;bermittelt, und die bestellte Ware geht umgehend in den Versand. <br><br>"
+"HP_BARPAY_DOWNLOAD","<a href='{LINK}' target='_blank'>Klicken Sie hier um Ihren Barcode runterzuladen</a><br><br>Drucken Sie den Barcode aus oder speichern Sie diesen auf Ihrem mobilen Endger&auml;t. Gehen Sie nun zu einer Kasse der <b>18.000 Akzeptanzstellen in Deutschland</b> und bezahlen Sie ganz einfach in bar. <br><br>In dem Augenblick, wenn der Rechnungsbetrag beglichen wird, erh&auml;lt der Online-H&auml;ndler die Information &uuml;ber den Zahlungseingang. Die bestellte Ware oder Dienstleistung geht umgehend in den Versand."
+
+"You need to pay with giropay before using direct debit.","Sie m&uuml;ssen zuerst eine Giropay Buchung t&auml;tigen um Lastschrift nutzen zu k&ouml;nnen."
+"You need to pay with direct e-banking before using direct debit.","Sie m&uuml;ssen zuerst eine Sofort&uuml;berweisungs Buchung t&auml;tigen um Lastschrift nutzen zu k&ouml;nnen."
+"You need to pay with giropay or direct e-banking before using direct debit.","Sie m&uuml;ssen zuerst eine Giropay oder Sofort&uuml;berweisungs Buchung t&auml;tigen um Lastschrift nutzen zu k&ouml;nnen."
+
+"HP_PNO_ERROR","Das von Ihnen gew&auml;lte Zahlverfahren steht Ihnen derzeit nicht zur Verf&uuml;gung. Bitte nutzen Sie ein anderes Zahlverfahren."
+
+"Account & Bank no.","Kontonr. & BLZ"
+"IBAN & BIC","IBAN & BIC"
+"both with selector","Beides mit auswahl"
+
+"Account information","Kontoinformationen"
+"Account no. & Bank no.","Kontonummer & Bankleitzahl"
+"IBAN & BIC","IBAN & BIC"
+
+"Direct Debit data not correct or incomplete","Lastschriftdaten falsch oder unvollstaendig"

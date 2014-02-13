@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>        
+  
+<config>  
+    <translate>
+        <modules>
+        <Mage_Heidelpay>
+            <files>
+            <default>Mage_Heidelpay.csv</default>
+            </files>
+        </Mage_Heidelpay>
+        </modules>
+    </translate>
+    <acl>
+      <resources>
+        <admin>
+          <children>
+            <system>
+              <children>
+                <config>
+                  <children>
+                    <heidelpay>
+                      <title>Heidelpay Section</title>
+                    </heidelpay>
+                  </children>
+                </config>
+              </children>
+            </system>
+          </children>
+        </admin>
+      </resources>
+    </acl>
+</config>

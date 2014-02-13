@@ -1,0 +1,144 @@
+"Creditcard (Heidelpay)","Creditcard (Heidelpay)"
+"Dear {NAME}, you used the following creditcard on your last visit. Do you want to re-use it?","Dear {NAME}, you used the following creditcard on your last visit. Do you want to re-use it?"
+"Yes, I want to re-use my creditcard.","Yes, I want to re-use my creditcard."
+"Re-use last creditcard","Re-use last creditcard"
+
+"Debitcard (Heidelpay)","Debitcard (Heidelpay)"
+"Dear {NAME}, you used the following debitcard on your last visit. Do you want to re-use it?","Dear {NAME}, you used the following debitcard on your last visit. Do you want to re-use it?"
+"Yes, I want to re-use my debitcard.","Yes, I want to re-use my debitcard."
+"Re-use last debitcard.","Re-use last debitcard."
+
+"Creditcard X (Heidelpay)","Creditcard X (Heidelpay)"
+"Dear {NAME}, you used the following creditcard X on your last visit. Do you want to re-use it?","Dear {NAME}, you used the following creditcard X on your last visit. Do you want to re-use it?"
+"Yes, I want to re-use my creditcard X.","Yes, I want to re-use my creditcard X."
+"Re-use last creditcard X","Re-use last creditcard X"
+
+"Your order has been received.","Your order has been received."
+"Please enter additional payment information.","Please enter additional payment information."
+
+"Direct Booking","Direct Booking"
+"Preauthorisation","Preauthorisation"
+"Direct Data Input","Direct Data Input"
+"Account Data from last Giropay Booking","Account Data from last Giropay Booking"
+"Account Data from last Sofort Banking Booking","Account Data from last Sofort Banking Booking"
+"Account Data from last Sofort Banking or Giropay Booking","Account Data from last Sofort Banking or Giropay Booking"
+"Direct with registration","Direct with registration"
+"After without registration","After without registration"
+
+"Credit Card","Credit Card"
+"Credit Card X","Credit Card X"
+"Debit Card","Debit Card"
+"Direct Debit","Direct Debit"
+"SOFORT &Üuml;berweisung","SOFORT &Üuml;berweisung"
+"Giropay","Giropay"
+"Pay Pal","Pay Pal"
+"EPS","EPS"
+"iDeal","iDeal"
+"Prepayment","Prepayment"
+"Invoice","Invoice"
+"Mangirkart","MangirKart"
+"BillSafe","BillSAFE"
+"Barpay","BarPay"
+
+"Heidelpay Credit Card","Heidelpay Credit Card"
+"Heidelpay Credit Card X","Heidelpay Credit Card X"
+"Heidelpay Debit Card","Heidelpay Debit Card"
+"Heidelpay Debitcard","Heidelpay Debitcard"
+"Heidelpay Direct Debit","Heidelpay Direct Debit"
+"Heidelpay SOFORT Überweisung","Heidelpay SOFORT Überweisung"
+"Heidelpay Giropay","Heidelpay Giropay"
+"Heidelpay Pay Pal","Heidelpay Pay Pal"
+"Heidelpay EPS","Heidelpay EPS"
+"Heidelpay iDeal","Heidelpay iDeal"
+"Heidelpay Prepayment","Heidelpay Prepayment"
+"Heidelpay Invoice","Heidelpay Invoice"
+"Heidelpay Mangirkart","Heidelpay MangirKart"
+"Heidelpay Billsafe","Heidelpay BillSAFE"
+"Heidelpay Barpay","Heidelpay BarPay"
+
+"DescCreditCard","Pay safe and secure with Creditcard<br><br>"
+"DescCreditCardX","Pay safe and secure with Creditcard X<br><br>"
+"DescDebitCard","Pay safe and secure with Debitcard<br><br>"
+"DescDirectDebit","Pay safe and secure with Direct Debit<br><br>"
+"DescEPS","Pay safe and secure with EPS"
+"DescGiropay","Pay safe and secure with Giropay"
+"DescIdeal","Pay safe and secure with iDeal"
+"DescPayPal","Pay safe and secure with PayPal"
+"DescPrepaid","Pay safe and secure with Prepayment"
+"DescDirectEBanking","Pay safe and secure with Direct EBanking"
+"DescInvoice","Pay comfortable with Invoice"
+"DescMangirkart","Pay comfortable with MangirKart"
+"DescBillsafe","Buy with invoice and check your order calmly before payment.<br/>"
+"DescBarpay","Pay comfortable with BarPay"
+
+
+
+"No.","No."
+"Valid until:","Valid until:"
+"close","close"
+"Cardtype:","Cardtype:"
+"Account No","Account No"
+"Bankcode","Bankcode"
+"IBAN","IBAN"
+"BIC","BIC"
+"Owner","Owner"
+"Please enter account no.","Please enter account no."
+"Please enter bankcode.","Please enter bankcode."
+"Please enter owner.","Please enter owner."
+"Enter additional information for the payment.","Enter additional information for the payment."
+"HP_SUCCESS_PREPAID","Your transaction was successfull! 
+
+            Transfer the amount of {CURRENCY} {AMOUNT} to the following account
+            Country :         {ACC_COUNTRY}
+            Account holder :  {ACC_OWNER}
+            Account No. :     {ACC_NUMBER}
+            Bank Code:        {ACC_BANKCODE}
+            IBAN:             {ACC_IBAN} 
+            BIC:              {ACC_BIC}
+            When you transfer the money you HAVE TO use the identification number
+        {SHORTID}
+        as the descriptor and nothing else. Otherwise we cannot match your transaction!"
+"HP_SUCCESS_INVOICE","Your transaction was successfull! 
+
+            Transfer the amount of {CURRENCY} {AMOUNT} to the following account
+            Country :         {ACC_COUNTRY}
+            Account holder :  {ACC_OWNER}
+            Account No. :     {ACC_NUMBER}
+            Bank Code:        {ACC_BANKCODE}
+            IBAN:             {ACC_IBAN} 
+            BIC:              {ACC_BIC}
+            When you transfer the money you HAVE TO use the identification number
+        {SHORTID}
+        as the descriptor and nothing else. Otherwise we cannot match your transaction!"
+
+"HP_SUCCESS_BILLSAFE","Your transaction was successfull! 
+
+            Transfer the amount of {CURRENCY} {AMOUNT} to the following account
+            Bank Name:        {ACC_BANKNAME}
+            Account holder :  {ACC_OWNER}
+            Account No. :     {ACC_NUMBER}
+            Bank Code:        {ACC_BANKCODE}
+            IBAN:             {ACC_IBAN} 
+            BIC:              {ACC_BIC}
+            When you transfer the money you HAVE TO use the identification number
+        {SHORTID}
+        as the descriptor and nothing else. Otherwise we cannot match your transaction!"
+"HP_LEGALNOTE_BILLSAFE","Please remit the outstanding amount {DAYS} days after you have been notified about shipping."
+
+"HP_BARPAY_INFO","Sicher, schnell und ohne Geb&uuml;hren: mit BarPay zahlen Sie Internet-Eink&auml;ufe mit Bargeld. Ohne Anmeldung. Ohne Kreditkarte. Ohne Kontodetails.<br><br>Nach Auswahl von BarPay &uuml;bermittelt Ihnen Ihr Online-H&auml;ndler einen individuellen Barcode per E-Mail oder zum Download auf Ihren Computer. Diesen k&ouml;nnen Sie ausdrucken und in &uuml;ber 18.000 BarPay-Akzeptanzstellen bezahlen. Der Zahlungseingang wird dem Online-H&auml;ndler in Echtzeit &uuml;bermittelt, und die bestellte Ware geht umgehend in den Versand. <br><br>"
+"HP_BARPAY_DOWNLOAD","<a href='{LINK}' target='_blank'>Klicken Sie hier um Ihren Barcode runterzuladen</a><br><br>Drucken Sie den Barcode aus oder speichern Sie diesen auf Ihrem mobilen Endger&auml;t. Gehen Sie nun zu einer Kasse der <b>18.000 Akzeptanzstellen in Deutschland</b> und bezahlen Sie ganz einfach in bar. <br><br>In dem Augenblick, wenn der Rechnungsbetrag beglichen wird, erh&auml;lt der Online-H&auml;ndler die Information &uuml;ber den Zahlungseingang. Die bestellte Ware oder Dienstleistung geht umgehend in den Versand."
+
+"You need to pay with giropay before using direct debit.","You need to pay with giropay before using direct debit."
+"You need to pay with direct e-banking before using direct debit.","You need to pay with direct e-banking before using direct debit."
+"You need to pay with giropay or direct e-banking before using direct debit.","You need to pay with giropay or direct e-banking before using direct debit."
+
+"HP_PNO_ERROR","The choosen payment method is temporary not available. Please choose another one."
+
+"Account & Bank no.","Account & Bank no."
+"IBAN & BIC","IBAN & BIC"
+"both with selector","both with selector"
+
+"Account information","Account information"
+"Account no. & Bank no.","Account no. & Bank no."
+"IBAN & BIC","IBAN & BIC"
+"Direct Debit data not correct or incomplete","Direct Debit data not correct or incomplete"

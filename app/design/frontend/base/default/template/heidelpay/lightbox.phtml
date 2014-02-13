@@ -1,0 +1,5 @@
+<h1><?php echo $this->__('Please enter additional payment information.')?></h1>
+<center><div id="hpBox"><div style="background-color: #666; position:fixed; display:block; margin:0; padding:0; top:0; left:0; opacity: 0.9; -moz-opacity: 0.9; -khtml-opacity: 0.9; filter:alpha(opacity=90); z-index: 1000; width: 100%; height: 100%;"></div>
+<div style="z-index: 1001; position: absolute; width: 800px; top: 50%; left: 50%; margin-top: -325px; margin-left: -400px;">
+<iframe src="<?php echo $this->getHPUrl()?>" frameborder="0" width="800" height="650" style="border: 1px solid #ddd"></iframe><br>
+<a href="" onClick="document.getElementById(\'hpBox\').style.display=\'none\'; return false;"><?php echo $this->__('schliessen')?></a></div></div></center>

@@ -1,0 +1,2055 @@
+<?xml version="1.0"?>
+<config>
+  <sections>
+    <!--{{{ Global Settings-->
+    <heidelpay translate="label" module="heidelpay">
+      <label>Heidelpay Settings</label>
+	    <tab>sales</tab>
+	    <frontend_type>text</frontend_type>
+	    <sort_order>405</sort_order>
+	    <show_in_default>1</show_in_default>
+	    <show_in_website>1</show_in_website>
+	    <show_in_store>1</show_in_store>
+      <groups>
+	      <settings translate="label">
+        <label>General Settings Heidelpay</label>
+        <frontend_type>text</frontend_type>
+        <sort_order>10</sort_order>
+        <show_in_default>1</show_in_default>
+        <show_in_website>1</show_in_website>
+        <show_in_store>1</show_in_store>
+	        <fields>
+	        	<security_sender translate="label">
+              <label>Security Sender</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>10</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </security_sender>
+            <user_id translate="label">
+              <label>User ID</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>20</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </user_id>
+            <user_pwd translate="label">
+              <label>User Password</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>30</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </user_pwd>
+            <live_url translate="label">
+              <label>Live URL</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>40</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </live_url>
+            <demo_url translate="label">
+              <label>Demo URL</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>50</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </demo_url>
+	        </fields>
+	      </settings>
+	    </groups>
+    </heidelpay>
+    <!--}}}-->
+  </sections>
+  <sections>
+    <payment>
+	    <groups>
+        <!-- {{{ HPCC -->
+        <hpcc translate="label">
+          <label>Heidelpay Credit Card</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>100</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields>
+            <title translate="label">
+              <label>Title</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>10</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </title>
+            <active translate="label">
+              <label>Enabled</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <sort_order>20</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </active>
+            <transactionmode translate="label">
+              <label>Transactionmode</label>
+              <frontend_type>select</frontend_type>
+              <source_model>Heidelpay/system_config_source_transactionmode</source_model>
+              <sort_order>30</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </transactionmode>
+            <modulemode translate="label">
+              <label>Modulemode</label>
+              <frontend_type>select</frontend_type>
+              <source_model>Heidelpay/system_config_source_modulemode</source_model>
+              <sort_order>30</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </modulemode>
+            <channel translate="label">
+              <label>Channel ID</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>40</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </channel>
+            <bookingmode translate="label">
+              <label>Booking mode</label>
+              <frontend_type>select</frontend_type>
+              <source_model>Heidelpay/system_config_source_bookingmode</source_model>
+              <sort_order>50</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </bookingmode>
+            <order_status translate="label">
+				      <label>Order status</label>
+				      <frontend_type>select</frontend_type>
+				      <source_model>Heidelpay/system_config_source_orderstatus</source_model>
+				      <sort_order>60</sort_order>
+				      <show_in_default>1</show_in_default>
+				      <show_in_website>1</show_in_website>
+				      <show_in_store>1</show_in_store>
+    				</order_status>
+	        	<payment_status translate="label">
+	          	<label>Payment status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>70</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </payment_status>
+	        	<wait_status translate="label">
+	          	<label>Waiting status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>80</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </wait_status>
+	        	<cancel_status translate="label">
+	          	<label>Cancel status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>90</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </cancel_status>
+            <error_status translate="label">
+	          	<label>Error status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>100</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </error_status>
+            <sort_order translate="label">
+              <label>Sort order</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>110</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </sort_order>
+            <min_amount translate="label">
+              <label>Minimum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>120</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </min_amount>
+            <max_amount translate="label">
+              <label>Maximum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>130</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </max_amount>
+            <allowspecific translate="label">
+	            <label>allow specific countries</label>
+	            <frontend_type>allowspecific</frontend_type>
+	            <sort_order>140</sort_order>
+	            <source_model>adminhtml/system_config_source_payment_allspecificcountries</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </allowspecific>
+            <specificcountry translate="label">
+	            <label>specific countries</label>
+	            <frontend_type>multiselect</frontend_type>
+	            <sort_order>150</sort_order>
+	            <source_model>adminhtml/system_config_source_country</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </specificcountry>
+          </fields>
+        </hpcc>
+        <!-- }}} -->
+                <!-- {{{ HPXC -->
+                <hpxc translate="label">
+                    <label>Heidelpay Credit Card X</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <title translate="label">
+                            <label>Title</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <transactionmode translate="label">
+                            <label>Transactionmode</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_transactionmode</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </transactionmode>
+                        <modulemode translate="label">
+                            <label>Modulemode</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_modulemode</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </modulemode>
+                        <channel translate="label">
+                            <label>Channel ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </channel>
+                        <bookingmode translate="label">
+                            <label>Booking mode</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_bookingmode</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bookingmode>
+                        <order_status translate="label">
+                            <label>Order status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </order_status>
+                        <payment_status translate="label">
+                            <label>Payment status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </payment_status>
+                        <wait_status translate="label">
+                            <label>Waiting status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </wait_status>
+                        <cancel_status translate="label">
+                            <label>Cancel status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cancel_status>
+                        <error_status translate="label">
+                            <label>Error status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </error_status>
+                        <sort_order translate="label">
+                            <label>Sort order</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sort_order>
+                        <min_amount translate="label">
+                            <label>Minimum Amount (CENT)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </min_amount>
+                        <max_amount translate="label">
+                            <label>Maximum Amount (CENT)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </max_amount>
+                        <allowspecific translate="label">
+                            <label>allow specific countries</label>
+                            <frontend_type>allowspecific</frontend_type>
+                            <sort_order>140</sort_order>
+                            <source_model> 
+                                adminhtml/system_config_source_payment_allspecificcountries</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </allowspecific>
+                        <specificcountry translate="label">
+                            <label>specific countries</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <sort_order>150</sort_order>
+                            <source_model> 
+                                adminhtml/system_config_source_country</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </specificcountry>
+                    </fields>
+                </hpxc>
+                <!-- }}} -->
+        <!-- {{{ HPDC -->
+        <hpdc translate="label">
+          <label>Heidelpay Debit Card</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>100</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields>
+            <title translate="label">
+              <label>Title</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>10</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </title>
+            <active translate="label">
+              <label>Enabled</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <sort_order>20</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </active>
+            <transactionmode translate="label">
+              <label>Transactionmode</label>
+              <frontend_type>select</frontend_type>
+              <source_model>Heidelpay/system_config_source_transactionmode</source_model>
+              <sort_order>30</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </transactionmode>
+            <modulemode translate="label">
+              <label>Modulemode</label>
+              <frontend_type>select</frontend_type>
+              <source_model>Heidelpay/system_config_source_modulemode</source_model>
+              <sort_order>30</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </modulemode>
+            <channel translate="label">
+              <label>Channel ID</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>40</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </channel>
+            <bookingmode translate="label">
+              <label>Booking mode</label>
+              <frontend_type>select</frontend_type>
+              <source_model>Heidelpay/system_config_source_bookingmode</source_model>
+              <sort_order>50</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </bookingmode>
+            <order_status translate="label">
+				      <label>Order status</label>
+				      <frontend_type>select</frontend_type>
+				      <source_model>Heidelpay/system_config_source_orderstatus</source_model>
+				      <sort_order>60</sort_order>
+				      <show_in_default>1</show_in_default>
+				      <show_in_website>1</show_in_website>
+				      <show_in_store>1</show_in_store>
+    				</order_status>
+	        	<payment_status translate="label">
+	          	<label>Payment status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>70</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </payment_status>
+	        	<wait_status translate="label">
+	          	<label>Waiting status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>80</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </wait_status>
+	        	<cancel_status translate="label">
+	          	<label>Cancel status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>90</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </cancel_status>
+            <error_status translate="label">
+	          	<label>Error status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>100</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </error_status>
+            <sort_order translate="label">
+              <label>Sort order</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>110</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </sort_order>
+            <min_amount translate="label">
+              <label>Minimum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>120</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </min_amount>
+            <max_amount translate="label">
+              <label>Maximum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>130</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </max_amount>
+            <allowspecific translate="label">
+	            <label>allow specific countries</label>
+	            <frontend_type>allowspecific</frontend_type>
+	            <sort_order>140</sort_order>
+	            <source_model>adminhtml/system_config_source_payment_allspecificcountries</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </allowspecific>
+            <specificcountry translate="label">
+	            <label>specific countries</label>
+	            <frontend_type>multiselect</frontend_type>
+	            <sort_order>150</sort_order>
+	            <source_model>adminhtml/system_config_source_country</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </specificcountry>
+          </fields>
+        </hpdc>
+        <!-- }}} -->
+        <!-- {{{ HPDD -->
+        <hpdd translate="label">
+          <label>Heidelpay Direct Debit</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>100</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields>
+            <title translate="label">
+              <label>Title</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>10</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </title>
+            <active translate="label">
+              <label>Enabled</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <sort_order>20</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </active>
+            <transactionmode translate="label">
+              <label>Transactionmode</label>
+              <frontend_type>select</frontend_type>
+              <source_model>Heidelpay/system_config_source_transactionmode</source_model>
+              <sort_order>30</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </transactionmode>
+            <channel translate="label">
+              <label>Channel ID</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>40</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </channel>
+            <bookingmode translate="label">
+              <label>Booking mode</label>
+              <frontend_type>select</frontend_type>
+              <source_model>Heidelpay/system_config_source_bookingmode</source_model>
+              <sort_order>50</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </bookingmode>
+            <modulemode translate="label">
+              <label>Modulemode</label>
+              <frontend_type>select</frontend_type>
+              <source_model>Heidelpay/system_config_source_ddmodulemode</source_model>
+              <sort_order>30</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </modulemode>			
+            <sepamode translate="label">
+              <label>Formdata</label>
+              <frontend_type>select</frontend_type>
+              <source_model>Heidelpay/system_config_source_sepamode</source_model>
+              <sort_order>35</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </sepamode>			
+            <order_status translate="label">
+				      <label>Order status</label>
+				      <frontend_type>select</frontend_type>
+				      <source_model>Heidelpay/system_config_source_orderstatus</source_model>
+				      <sort_order>60</sort_order>
+				      <show_in_default>1</show_in_default>
+				      <show_in_website>1</show_in_website>
+				      <show_in_store>1</show_in_store>
+    				</order_status>
+	        	<payment_status translate="label">
+	          	<label>Payment status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>70</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+	        	</payment_status>
+	        	<wait_status translate="label">
+	          	<label>Waiting status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>80</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </wait_status>
+	        	<cancel_status translate="label">
+	          	<label>Cancel status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>90</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </cancel_status>
+            <error_status translate="label">
+	          	<label>Error status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>100</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </error_status>
+            <sort_order translate="label">
+              <label>Sort order</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>110</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </sort_order>
+            <min_amount translate="label">
+              <label>Minimum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>120</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </min_amount>
+            <max_amount translate="label">
+              <label>Maximum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>130</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </max_amount>
+            <allowspecific translate="label">
+	            <label>allow specific countries</label>
+	            <frontend_type>allowspecific</frontend_type>
+	            <sort_order>140</sort_order>
+	            <source_model>adminhtml/system_config_source_payment_allspecificcountries</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </allowspecific>
+            <specificcountry translate="label">
+	            <label>specific countries</label>
+	            <frontend_type>multiselect</frontend_type>
+	            <sort_order>150</sort_order>
+	            <source_model>adminhtml/system_config_source_country</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </specificcountry>
+          </fields>
+        </hpdd>
+        <!-- }}} -->
+        <!-- {{{ HPSU -->
+        <hpsu translate="label">
+                    <label>Heidelpay SOFORT Überweisung</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>100</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields>
+            <title translate="label">
+              <label>Title</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>10</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </title>
+            <active translate="label">
+              <label>Enabled</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <sort_order>20</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </active>
+            <transactionmode translate="label">
+              <label>Transactionmode</label>
+              <frontend_type>select</frontend_type>
+              <source_model>Heidelpay/system_config_source_transactionmode</source_model>
+              <sort_order>30</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </transactionmode>
+            <channel translate="label">
+              <label>Channel ID</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>40</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </channel>
+            <order_status translate="label">
+				      <label>Order status</label>
+				      <frontend_type>select</frontend_type>
+				      <source_model>Heidelpay/system_config_source_orderstatus</source_model>
+				      <sort_order>60</sort_order>
+				      <show_in_default>1</show_in_default>
+				      <show_in_website>1</show_in_website>
+				      <show_in_store>1</show_in_store>
+    				</order_status>
+	        	<payment_status translate="label">
+	          	<label>Payment status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>70</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+	        	</payment_status>
+	        	<wait_status translate="label">
+	          	<label>Waiting status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>80</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </wait_status>
+	        	<cancel_status translate="label">
+	          	<label>Cancel status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>90</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </cancel_status>
+            <error_status translate="label">
+	          	<label>Error status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>100</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </error_status>
+            <sort_order translate="label">
+              <label>Sort order</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>110</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </sort_order>
+            <min_amount translate="label">
+              <label>Minimum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>120</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </min_amount>
+            <max_amount translate="label">
+              <label>Maximum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>130</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </max_amount>
+            <allowspecific translate="label">
+	            <label>allow specific countries</label>
+	            <frontend_type>allowspecific</frontend_type>
+	            <sort_order>140</sort_order>
+	            <source_model>adminhtml/system_config_source_payment_allspecificcountries</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </allowspecific>
+            <specificcountry translate="label">
+	            <label>specific countries</label>
+	            <frontend_type>multiselect</frontend_type>
+	            <sort_order>150</sort_order>
+	            <source_model>adminhtml/system_config_source_country</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </specificcountry>
+          </fields>
+        </hpsu>
+        <!-- }}} -->
+        <!-- {{{ HPGP -->
+        <hpgp translate="label">
+          <label>Heidelpay Giropay</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>100</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields>
+            <title translate="label">
+              <label>Title</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>10</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </title>
+            <active translate="label">
+              <label>Enabled</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <sort_order>20</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </active>
+            <transactionmode translate="label">
+              <label>Transactionmode</label>
+              <frontend_type>select</frontend_type>
+              <source_model>Heidelpay/system_config_source_transactionmode</source_model>
+              <sort_order>30</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </transactionmode>
+            <channel translate="label">
+              <label>Channel ID</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>40</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </channel>
+            <order_status translate="label">
+				      <label>Order status</label>
+				      <frontend_type>select</frontend_type>
+				      <source_model>Heidelpay/system_config_source_orderstatus</source_model>
+				      <sort_order>60</sort_order>
+				      <show_in_default>1</show_in_default>
+				      <show_in_website>1</show_in_website>
+				      <show_in_store>1</show_in_store>
+    				</order_status>
+	        	<payment_status translate="label">
+	          	<label>Payment status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>70</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+	        	</payment_status>
+	        	<wait_status translate="label">
+	          	<label>Waiting status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>80</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </wait_status>
+	        	<cancel_status translate="label">
+	          	<label>Cancel status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>90</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </cancel_status>
+            <error_status translate="label">
+	          	<label>Error status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>100</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </error_status>
+            <sort_order translate="label">
+              <label>Sort order</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>110</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </sort_order>
+            <min_amount translate="label">
+              <label>Minimum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>120</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </min_amount>
+            <max_amount translate="label">
+              <label>Maximum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>130</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </max_amount>
+            <allowspecific translate="label">
+	            <label>allow specific countries</label>
+	            <frontend_type>allowspecific</frontend_type>
+	            <sort_order>140</sort_order>
+	            <source_model>adminhtml/system_config_source_payment_allspecificcountries</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </allowspecific>
+            <specificcountry translate="label">
+	            <label>specific countries</label>
+	            <frontend_type>multiselect</frontend_type>
+	            <sort_order>150</sort_order>
+	            <source_model>adminhtml/system_config_source_country</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </specificcountry>
+          </fields>
+        </hpgp>
+        <!-- }}} -->
+                <!-- {{{ HPBP -->
+                <hpbp translate="label">
+                    <label>Heidelpay Barpay</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <title translate="label">
+                            <label>Title</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <transactionmode translate="label">
+                            <label>Transactionmode</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_transactionmode</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </transactionmode>
+                        <channel translate="label">
+                            <label>Channel ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </channel>
+                        <order_status translate="label">
+                            <label>Order status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </order_status>
+                        <payment_status translate="label">
+                            <label>Payment status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </payment_status>
+                        <wait_status translate="label">
+                            <label>Waiting status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </wait_status>
+                        <cancel_status translate="label">
+                            <label>Cancel status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cancel_status>
+                        <error_status translate="label">
+                            <label>Error status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </error_status>
+                        <sort_order translate="label">
+                            <label>Sort order</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sort_order>
+                        <min_amount translate="label">
+                            <label>Minimum Amount (CENT)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </min_amount>
+                        <max_amount translate="label">
+                            <label>Maximum Amount (CENT)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </max_amount>
+                        <allowspecific translate="label">
+                            <label>allow specific countries</label>
+                            <frontend_type>allowspecific</frontend_type>
+                            <sort_order>140</sort_order>
+                            <source_model> 
+                                adminhtml/system_config_source_payment_allspecificcountries</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </allowspecific>
+                        <specificcountry translate="label">
+                            <label>specific countries</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <sort_order>150</sort_order>
+                            <source_model> 
+                                adminhtml/system_config_source_country</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </specificcountry>
+                    </fields>
+                </hpbp>
+                <!-- }}} -->
+                <!-- {{{ HPBS -->
+                <hpbs translate="label">
+                    <label>Heidelpay Billsafe</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <title translate="label">
+                            <label>Title</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <transactionmode translate="label">
+                            <label>Transactionmode</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_transactionmode</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </transactionmode>
+                        <channel translate="label">
+                            <label>Channel ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </channel>
+                        <order_status translate="label">
+                            <label>Order status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </order_status>
+                        <payment_status translate="label">
+                            <label>Payment status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </payment_status>
+                        <wait_status translate="label">
+                            <label>Waiting status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </wait_status>
+                        <cancel_status translate="label">
+                            <label>Cancel status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cancel_status>
+                        <error_status translate="label">
+                            <label>Error status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </error_status>
+                        <sort_order translate="label">
+                            <label>Sort order</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sort_order>
+                        <min_amount translate="label">
+                            <label>Minimum Amount (CENT)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </min_amount>
+                        <max_amount translate="label">
+                            <label>Maximum Amount (CENT)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </max_amount>
+                        <allowspecific translate="label">
+                            <label>allow specific countries</label>
+                            <frontend_type>allowspecific</frontend_type>
+                            <sort_order>140</sort_order>
+                            <source_model> 
+                                adminhtml/system_config_source_payment_allspecificcountries</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </allowspecific>
+                        <specificcountry translate="label">
+                            <label>specific countries</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <sort_order>150</sort_order>
+                            <source_model> 
+                                adminhtml/system_config_source_country</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </specificcountry>
+                    </fields>
+                </hpbs>
+                <!-- }}} -->
+                <!-- {{{ HPMK -->
+                <hpmk translate="label">
+                    <label>Heidelpay MangirKart</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <title translate="label">
+                            <label>Title</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <transactionmode translate="label">
+                            <label>Transactionmode</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_transactionmode</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </transactionmode>
+                        <channel translate="label">
+                            <label>Channel ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </channel>
+                        <order_status translate="label">
+                            <label>Order status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </order_status>
+                        <payment_status translate="label">
+                            <label>Payment status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </payment_status>
+                        <wait_status translate="label">
+                            <label>Waiting status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </wait_status>
+                        <cancel_status translate="label">
+                            <label>Cancel status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cancel_status>
+                        <error_status translate="label">
+                            <label>Error status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model> 
+                                Heidelpay/system_config_source_orderstatus</source_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </error_status>
+                        <sort_order translate="label">
+                            <label>Sort order</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sort_order>
+                        <min_amount translate="label">
+                            <label>Minimum Amount (CENT)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </min_amount>
+                        <max_amount translate="label">
+                            <label>Maximum Amount (CENT)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </max_amount>
+                        <allowspecific translate="label">
+                            <label>allow specific countries</label>
+                            <frontend_type>allowspecific</frontend_type>
+                            <sort_order>140</sort_order>
+                            <source_model> 
+                                adminhtml/system_config_source_payment_allspecificcountries</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </allowspecific>
+                        <specificcountry translate="label">
+                            <label>specific countries</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <sort_order>150</sort_order>
+                            <source_model> 
+                                adminhtml/system_config_source_country</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </specificcountry>
+                    </fields>
+                </hpmk>
+                <!-- }}} -->
+        <!-- {{{ HPPPAL -->
+        <hpppal translate="label">
+          <label>Heidelpay Pay Pal</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>100</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields>
+            <title translate="label">
+              <label>Title</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>10</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </title>
+            <active translate="label">
+              <label>Enabled</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <sort_order>20</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </active>
+            <transactionmode translate="label">
+              <label>Transactionmode</label>
+              <frontend_type>select</frontend_type>
+              <source_model>Heidelpay/system_config_source_transactionmode</source_model>
+              <sort_order>30</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </transactionmode>
+            <channel translate="label">
+              <label>Channel ID</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>40</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </channel>
+            <order_status translate="label">
+				      <label>Order status</label>
+				      <frontend_type>select</frontend_type>
+				      <source_model>Heidelpay/system_config_source_orderstatus</source_model>
+				      <sort_order>60</sort_order>
+				      <show_in_default>1</show_in_default>
+				      <show_in_website>1</show_in_website>
+				      <show_in_store>1</show_in_store>
+    				</order_status>
+	        	<payment_status translate="label">
+	          	<label>Payment status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>70</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+	        	</payment_status>
+	        	<wait_status translate="label">
+	          	<label>Waiting status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>80</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </wait_status>
+	        	<cancel_status translate="label">
+	          	<label>Cancel status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>90</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </cancel_status>
+            <error_status translate="label">
+	          	<label>Error status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>100</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </error_status>
+            <sort_order translate="label">
+              <label>Sort order</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>110</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </sort_order>
+            <min_amount translate="label">
+              <label>Minimum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>120</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </min_amount>
+            <max_amount translate="label">
+              <label>Maximum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>130</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </max_amount>
+            <allowspecific translate="label">
+	            <label>allow specific countries</label>
+	            <frontend_type>allowspecific</frontend_type>
+	            <sort_order>140</sort_order>
+	            <source_model>adminhtml/system_config_source_payment_allspecificcountries</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </allowspecific>
+            <specificcountry translate="label">
+	            <label>specific countries</label>
+	            <frontend_type>multiselect</frontend_type>
+	            <sort_order>150</sort_order>
+	            <source_model>adminhtml/system_config_source_country</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </specificcountry>
+          </fields>
+        </hpppal>
+        <!-- }}} -->
+        <!-- {{{ HPEPS -->
+        <hpeps translate="label">
+          <label>Heidelpay EPS</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>100</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields>
+            <title translate="label">
+              <label>Title</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>10</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </title>
+            <active translate="label">
+              <label>Enabled</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <sort_order>20</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </active>
+            <transactionmode translate="label">
+              <label>Transactionmode</label>
+              <frontend_type>select</frontend_type>
+              <source_model>Heidelpay/system_config_source_transactionmode</source_model>
+              <sort_order>30</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </transactionmode>
+            <channel translate="label">
+              <label>Channel ID</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>40</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </channel>
+            <order_status translate="label">
+				      <label>Order status</label>
+				      <frontend_type>select</frontend_type>
+				      <source_model>Heidelpay/system_config_source_orderstatus</source_model>
+				      <sort_order>60</sort_order>
+				      <show_in_default>1</show_in_default>
+				      <show_in_website>1</show_in_website>
+				      <show_in_store>1</show_in_store>
+    				</order_status>
+	        	<payment_status translate="label">
+	          	<label>Payment status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>70</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+	        	</payment_status>
+	        	<wait_status translate="label">
+	          	<label>Waiting status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>80</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </wait_status>
+	        	<cancel_status translate="label">
+	          	<label>Cancel status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>90</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </cancel_status>
+            <error_status translate="label">
+	          	<label>Error status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>100</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </error_status>
+            <sort_order translate="label">
+              <label>Sort order</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>110</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </sort_order>
+            <min_amount translate="label">
+              <label>Minimum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>120</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </min_amount>
+            <max_amount translate="label">
+              <label>Maximum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>130</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </max_amount>
+            <allowspecific translate="label">
+	            <label>allow specific countries</label>
+	            <frontend_type>allowspecific</frontend_type>
+	            <sort_order>140</sort_order>
+	            <source_model>adminhtml/system_config_source_payment_allspecificcountries</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </allowspecific>
+            <specificcountry translate="label">
+	            <label>specific countries</label>
+	            <frontend_type>multiselect</frontend_type>
+	            <sort_order>150</sort_order>
+	            <source_model>adminhtml/system_config_source_country</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </specificcountry>
+          </fields>
+        </hpeps>
+        <!-- }}} -->
+        <!-- {{{ HPIDL -->
+        <hpidl translate="label">
+          <label>Heidelpay iDeal</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>100</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields>
+            <title translate="label">
+              <label>Title</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>10</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </title>
+            <active translate="label">
+              <label>Enabled</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <sort_order>20</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </active>
+            <transactionmode translate="label">
+              <label>Transactionmode</label>
+              <frontend_type>select</frontend_type>
+              <source_model>Heidelpay/system_config_source_transactionmode</source_model>
+              <sort_order>30</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </transactionmode>
+            <channel translate="label">
+              <label>Channel ID</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>40</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </channel>
+            <order_status translate="label">
+				      <label>Order status</label>
+				      <frontend_type>select</frontend_type>
+				      <source_model>Heidelpay/system_config_source_orderstatus</source_model>
+				      <sort_order>60</sort_order>
+				      <show_in_default>1</show_in_default>
+				      <show_in_website>1</show_in_website>
+				      <show_in_store>1</show_in_store>
+    				</order_status>
+	        	<payment_status translate="label">
+	          	<label>Payment status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>70</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+	        	</payment_status>
+	        	<wait_status translate="label">
+	          	<label>Waiting status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>80</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </wait_status>
+	        	<cancel_status translate="label">
+	          	<label>Cancel status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>90</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </cancel_status>
+            <error_status translate="label">
+	          	<label>Error status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>100</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </error_status>
+            <sort_order translate="label">
+              <label>Sort order</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>110</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </sort_order>
+            <min_amount translate="label">
+              <label>Minimum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>120</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </min_amount>
+            <max_amount translate="label">
+              <label>Maximum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>130</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </max_amount>
+            <allowspecific translate="label">
+	            <label>allow specific countries</label>
+	            <frontend_type>allowspecific</frontend_type>
+	            <sort_order>140</sort_order>
+	            <source_model>adminhtml/system_config_source_payment_allspecificcountries</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </allowspecific>
+            <specificcountry translate="label">
+	            <label>specific countries</label>
+	            <frontend_type>multiselect</frontend_type>
+	            <sort_order>150</sort_order>
+	            <source_model>adminhtml/system_config_source_country</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </specificcountry>
+          </fields>
+        </hpidl>
+        <!-- }}} -->
+        <!-- {{{ HPPP -->
+        <hppp translate="label">
+          <label>Heidelpay Prepayment</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>100</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields>
+            <title translate="label">
+              <label>Title</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>10</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </title>
+            <active translate="label">
+              <label>Enabled</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <sort_order>20</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </active>
+            <transactionmode translate="label">
+              <label>Transactionmode</label>
+              <frontend_type>select</frontend_type>
+              <source_model>Heidelpay/system_config_source_transactionmode</source_model>
+              <sort_order>30</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </transactionmode>
+            <channel translate="label">
+              <label>Channel ID</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>40</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </channel>
+            <order_status translate="label">
+				      <label>Order status</label>
+				      <frontend_type>select</frontend_type>
+				      <source_model>Heidelpay/system_config_source_orderstatus</source_model>
+				      <sort_order>60</sort_order>
+				      <show_in_default>1</show_in_default>
+				      <show_in_website>1</show_in_website>
+				      <show_in_store>1</show_in_store>
+    				</order_status>
+	        	<payment_status translate="label">
+	          	<label>Payment status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>70</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+	        	</payment_status>
+	        	<wait_status translate="label">
+	          	<label>Waiting status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>80</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </wait_status>
+	        	<cancel_status translate="label">
+	          	<label>Cancel status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>90</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </cancel_status>
+            <error_status translate="label">
+	          	<label>Error status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>100</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </error_status>
+            <sort_order translate="label">
+              <label>Sort order</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>110</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </sort_order>
+            <min_amount translate="label">
+              <label>Minimum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>120</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </min_amount>
+            <max_amount translate="label">
+              <label>Maximum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>130</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </max_amount>
+            <allowspecific translate="label">
+	            <label>allow specific countries</label>
+	            <frontend_type>allowspecific</frontend_type>
+	            <sort_order>140</sort_order>
+	            <source_model>adminhtml/system_config_source_payment_allspecificcountries</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </allowspecific>
+            <specificcountry translate="label">
+	            <label>specific countries</label>
+	            <frontend_type>multiselect</frontend_type>
+	            <sort_order>150</sort_order>
+	            <source_model>adminhtml/system_config_source_country</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </specificcountry>
+          </fields>
+        </hppp>
+        <!-- }}} -->
+        <!-- {{{ HPIV -->
+        <hpiv translate="label">
+          <label>Heidelpay Invoice</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>100</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields>
+            <title translate="label">
+              <label>Title</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>10</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </title>
+            <active translate="label">
+              <label>Enabled</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <sort_order>20</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </active>
+            <transactionmode translate="label">
+              <label>Transactionmode</label>
+              <frontend_type>select</frontend_type>
+              <source_model>Heidelpay/system_config_source_transactionmode</source_model>
+              <sort_order>30</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </transactionmode>
+            <channel translate="label">
+              <label>Channel ID</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>40</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </channel>
+            <order_status translate="label">
+				      <label>Order status</label>
+				      <frontend_type>select</frontend_type>
+				      <source_model>Heidelpay/system_config_source_orderstatus</source_model>
+				      <sort_order>60</sort_order>
+				      <show_in_default>1</show_in_default>
+				      <show_in_website>1</show_in_website>
+				      <show_in_store>1</show_in_store>
+    				</order_status>
+	        	<payment_status translate="label">
+	          	<label>Payment status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>70</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+	        	</payment_status>
+	        	<wait_status translate="label">
+	          	<label>Waiting status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>80</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </wait_status>
+	        	<cancel_status translate="label">
+	          	<label>Cancel status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>90</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </cancel_status>
+            <error_status translate="label">
+	          	<label>Error status</label>
+	          	<frontend_type>select</frontend_type>
+	          	<source_model>Heidelpay/system_config_source_orderstatus</source_model>
+	          	<sort_order>100</sort_order>
+	          	<show_in_default>1</show_in_default>
+	          	<show_in_website>1</show_in_website>
+	          	<show_in_store>1</show_in_store>
+            </error_status>
+            <sort_order translate="label">
+              <label>Sort order</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>110</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </sort_order>
+            <min_amount translate="label">
+              <label>Minimum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>120</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </min_amount>
+            <max_amount translate="label">
+              <label>Maximum Amount (CENT)</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>130</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </max_amount>
+            <allowspecific translate="label">
+	            <label>allow specific countries</label>
+	            <frontend_type>allowspecific</frontend_type>
+	            <sort_order>140</sort_order>
+	            <source_model>adminhtml/system_config_source_payment_allspecificcountries</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </allowspecific>
+            <specificcountry translate="label">
+	            <label>specific countries</label>
+	            <frontend_type>multiselect</frontend_type>
+	            <sort_order>150</sort_order>
+	            <source_model>adminhtml/system_config_source_country</source_model>
+	            <show_in_default>1</show_in_default>
+	            <show_in_website>1</show_in_website>
+	            <show_in_store>1</show_in_store>
+            </specificcountry>
+          </fields>
+        </hpiv>
+        <!-- }}} -->
+      </groups>
+    </payment>
+  </sections>
+</config>

@@ -1,0 +1,7 @@
+app/etc/modules/*                                               app/etc/modules/
+app/code/local/Mage/Heidelpay/*                                 app/code/local/Mage/Heidelpay/
+app/design/adminhtml/default/default/template/heidelpay/*       app/design/adminhtml/default/default/template/heidelpay/
+app/design/frontend/base/default/layout/heidelpay.xml           app/design/frontend/base/default/layout/heidelpay.xml
+app/design/frontend/base/default/template/heidelpay/*           app/design/frontend/base/default/template/heidelpay/
+app/locale/de_DE/*                                              app/locale/de_DE/
+app/locale/en_US/*                                              app/locale/en_US/

@@ -1,0 +1,87 @@
+<fieldset class="form-list">
+    <?php $_code=$this->getMethodCode()?>
+    <ul id="payment_form_<?php echo $_code?>" style="display:none">
+        <li>
+            <div class="input-box"><?php echo $this->__('DescCreditCardX')?><?php echo $this->getMethod()->getLightbox(true);?></div>
+        </li>
+    </ul>
+</fieldset>
+<script type="text/javascript">
+	if($('p_method_hpxc').checked){
+		$('payment_form_hpxc').show();
+	}
+
+	if($$('#checkout-payment-method-load #p_method_hpxc').length > 0){
+		$('checkout-payment-method-load').observe('change', function(event){
+			var actPayment = $$('input:checked[type=radio][name=\'payment[method]\']')[0].id;			
+			if(actPayment.indexOf('_hp') == '-1'){
+				$$('#payment-buttons-container button').first().show();
+			}
+			if($('payment_form_hpxc').visible()){
+				if($$('#payment_form_hpxc #heidelpay_use_xcard').length == 0){
+					if($('p_method_hpxc').checked){
+						$$('#payment-buttons-container button').first().hide();
+					}
+					if($$('#payment_form_hpxc iframe').length == 0){ $$('#payment-buttons-container button').first().show(); }
+				}else{				
+					if(($F('p_method_hpxc') == 'hpxc') && !($F('heidelpay_use_xcard') == 1)){
+						$$('#payment-buttons-container button').first().show();
+						if($$('#payment_form_hpxc iframe').length > 0){
+							$$('#payment-buttons-container button').first().hide();
+						}
+					}
+					if(($F('p_method_hpxc') == 'hpxc') && ($F('heidelpay_use_xcard') == 1)){
+						$$('#payment-buttons-container button').first().show();
+					}
+				}	
+			}
+		});
+		
+		if($$('#payment_form_hpxc #heidelpay_use_xcard').length != 0){
+			$('heidelpay_use_xcard').observe('change', function(event){	
+				if($F('heidelpay_use_xcard') == 1){
+					$$('#payment-buttons-container button').first().show();
+				}else{
+					$$('#payment-buttons-container button').first().hide();
+				}
+			});
+		}
+		if($$('#payment_form_hpxc iframe').length > 0){
+			$$('#payment_form_hpxc iframe').first().writeAttribute('width','620');
+			$$('#payment_form_hpxc iframe').first().writeAttribute('height','300');
+			$$('#payment_form_hpxc iframe').first().writeAttribute('allowtransparency',true);
+		}
+	}
+		
+	$$('#opc-payment.allow .step-title').first().observe('click', function(event){
+		if($$('#opc-payment.allow #checkout-step-payment').length > 0){
+			$$('#opc-payment.allow #checkout-step-payment').first().hide();
+		}
+		$('opc-payment').removeClassName('active');
+		$('opc-payment').removeClassName('allow');
+
+		shippingMethod.save();
+		var loading = '<img id="loading-gif" style="margin-top: 35%;" src="<?php print Mage::getBaseUrl(); ?>../skin/adminhtml/default/default/images/ajax-loader-tr.gif" />';
+		if($$('#window-overlay img').length < 1){		
+			$('window-overlay').insert(loading);
+		}
+		$('window-overlay').show();
+		check.delay(1, 0);
+		
+		function check(i){
+			if($('opc-payment').hasClassName('allow')){				
+				$('window-overlay').hide();
+				$('loading-gif').remove();
+				$$('#opc-payment.allow #checkout-step-payment').first().show();
+			}else{
+				if(i<5){
+					i++;
+					check.delay(1, i);
+				}else{
+					shippingMethod.save();
+					check.delay(1, 0);
+				}
+			}
+		}
+	});
+</script>

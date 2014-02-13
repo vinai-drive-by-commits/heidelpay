@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+<!--
+Default layout, loads most of the pages
+-->
+    <heidelpay_payment_success>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="heidelpay/success" name="heidelpay_success" template="heidelpay/success.phtml"/>
+        </reference>
+    </heidelpay_payment_success>
+    <heidelpay_payment_failure>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="core/template" name="heidelpay.failure" template="heidelpay/failure.phtml"/>
+        </reference>
+    </heidelpay_payment_failure>
+    <heidelpay_payment_redirect>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="core/template" name="heidelpay.redirect" template="heidelpay/redirect.phtml"/>
+        </reference>
+    </heidelpay_payment_redirect>
+    <heidelpay_payment_paymentccard>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="core/template" name="heidelpay.paymentccard" template="heidelpay/paymentccard.phtml"/>
+        </reference>
+    </heidelpay_payment_paymentccard>
+    <heidelpay_payment_iframe>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="heidelpay/iframe" name="heidelpay_iframe" template="heidelpay/iframe.phtml"/>
+        </reference>
+      </heidelpay_payment_iframe>
+    <heidelpay_payment_suform>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="heidelpay/suform" name="heidelpay_suform" template="heidelpay/suform.phtml"/>
+        </reference>
+    </heidelpay_payment_suform>
+    <heidelpay_payment_lightbox>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="heidelpay/lightbox" name="heidelpay_lightbox" template="heidelpay/lightbox.phtml"/>
+        </reference>
+    </heidelpay_payment_lightbox>
+    <heidelpay_payment_cancel>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="heidelpay/cancel" name="heidelpay_cancel" template="heidelpay/cancel.phtml"/>
+        </reference>
+    </heidelpay_payment_cancel>
+    <heidelpay_payment_error>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="heidelpay/error" name="heidelpay_error" template="heidelpay/error.phtml"/>
+        </reference>
+    </heidelpay_payment_error>
+    <heidelpay_payment_threedsecure>
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="heidelpay/secure" name="heidelpay_secure" template="heidelpay/secure.phtml"/>
+        </reference>
+    </heidelpay_payment_threedsecure>
+</layout>

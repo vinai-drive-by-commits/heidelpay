@@ -1,0 +1,17 @@
+{
+    "name": "kirchbergerknorr/heidelpay",
+    "description": "Heidelpay",
+    "keywords": ["magento", "heidelpay", "payment"],
+    "homepage": "http://www.magentocommerce.com/magento-connect/heidelpay-1.html",
+    "type": "magento-module",
+    "license":"OSL-3.0",
+    "authors": [
+        {
+            "name": "Aleksey Razbakov",
+            "email": "aleksey@razbakov.com"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

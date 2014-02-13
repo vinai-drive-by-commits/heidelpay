@@ -1,0 +1,5 @@
+<h1><?php echo $this->__('Abbruch durch Benutzer')?></h1><br>
+<?php
+$request = $this->getRequest()->getParams();
+if (isset($request['error'])) echo urldecode($request['error']);
+?>

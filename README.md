@@ -40,13 +40,13 @@ Version Log
 
 ---
 
- Contact
- Heidelberger Payment GmbH
- Vangerowstraße 18
- 69115 Heidelberg
+    Contact
+    Heidelberger Payment GmbH
+    Vangerowstraße 18
+    69115 Heidelberg
 
 ---
 
- Telefon: +49 (0) 6221 / 65 170-20
- E-Mail: sales@heidelpay.de
- Internet: www.heidelpay.de
+    Telefon: +49 (0) 6221 / 65 170-20
+    E-Mail: sales@heidelpay.de
+    Internet: www.heidelpay.de

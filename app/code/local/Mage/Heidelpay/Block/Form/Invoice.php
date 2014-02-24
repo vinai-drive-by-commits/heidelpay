@@ -1,20 +1,21 @@
 <?php
+
 class Mage_Heidelpay_Block_Form_Invoice extends Mage_Heidelpay_Block_Form
 {
-	protected function _construct()
-	{
-    parent::_construct();
-    $this->setTemplate('heidelpay/form/invoice.phtml');
-	}
+    protected function _construct()
+    {
+        parent::_construct();
+        $this->setTemplate('heidelpay/form/invoice.phtml');
+    }
 
-	/**
-	 * Retrieve payment configuration object
-	 *
-	 * @return Mage_Payment_Model_Config
-	 */
-	protected function _getConfig()
-	{
-    return Mage::getSingleton('payment/config');
-	}
+    /**
+     * Retrieve payment configuration object
+     *
+     * @return Mage_Payment_Model_Config
+     */
+    protected function _getConfig()
+    {
+        return Mage::getSingleton('payment/config');
+    }
 
 }

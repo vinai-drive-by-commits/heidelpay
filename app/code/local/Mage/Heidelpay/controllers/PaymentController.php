@@ -342,7 +342,6 @@ class Mage_Heidelpay_PaymentController extends Mage_Core_Controller_Front_Action
         }
 
         // redirect customer to cart
-        Mage::log("Heidelpay - responseAction: Fehlercode " . $errormsg . ", " . $this->getSession()->getData('hp_iframe_opened'));
         if (isset($params['isiframe']) && $params['isiframe'] == 1) {
             $url = Mage::getUrl('checkout/cart/', array('_secure' => true));
             echo "<html><head><script type=\"text/javascript\">";
@@ -450,8 +449,6 @@ class Mage_Heidelpay_PaymentController extends Mage_Core_Controller_Front_Action
         $post = Mage::app()->getRequest()->getParams();
         #echo '<pre>'.print_r($post, 1).'</pre>';
 
-        Mage::log("Heidelpay - responseAction: post");
-        Mage::log($post);
         $returnvalue = '';
         if (isset($post['PROCESSING_RESULT'])) $returnvalue = $post['PROCESSING_RESULT'];
         if ($returnvalue) {
@@ -582,7 +579,6 @@ class Mage_Heidelpay_PaymentController extends Mage_Core_Controller_Front_Action
                 if ($custId != "") {
                     $customer = Mage::getModel('customer/customer')->load($custId);
                     if ($customer->getEmail() != "") {
-                        Mage::log("Heidelpay - responseAction: customer->save() " . $custId . ", " . $customer->getEmail());
                         $customer->setHeidelpayLastBlz($accBank);
                         $customer->setHeidelpayLastKto($accNumber);
                         $customer->setHeidelpayLastHolder($accHolder);
@@ -619,7 +615,6 @@ class Mage_Heidelpay_PaymentController extends Mage_Core_Controller_Front_Action
                             if ($this->_invoiceOrderEmail) $invoice->sendEmail(true, $invoiceMailComment); // Rechnung versenden
                         }
 
-                        Mage::log("Heidelpay - responseAction: order->setState " . $payment->getPaymentState());
                         $order->setState($payment->getPaymentState());
                         $order->addStatusToHistory($payment->getPaymentState(), 'Short ID: ' . $shortid . ' ' . $invoiceMailComment, $order->getCustomerNoteNotify());
                         if (strpos($payCode, 'PA') !== false) { # Nur bei PA speichern.
@@ -701,7 +696,6 @@ class Mage_Heidelpay_PaymentController extends Mage_Core_Controller_Front_Action
                 } else {
                     if (strpos($payCode, 'CC') !== false || strpos($payCode, 'XC') !== false || strpos($payCode, 'DC') !== false) {
                         $isIframe = 1;
-                        Mage::log("Heidelpay - responseAction: " . $payCode . " Zahlung mit Fehlercode " . $processReturn . ", " . $this->getSession()->getData('hp_iframe_opened'));
                     } else {
                         $isIframe = 0;
                     }

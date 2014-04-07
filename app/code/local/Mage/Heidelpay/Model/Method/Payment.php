@@ -374,9 +374,12 @@ class Mage_Heidelpay_Model_Method_Payment extends Mage_Payment_Model_Method_Abst
         if ($debug) echo '<pre>' . print_r($res, 1) . '</pre>';
 
         // PNO Meldung Special Hack bei PROCESSING.RETURN.CODE=100.400.110
-        if (strpos($res['all']['PROCESSING.RETURN.CODE'], '100.400.110') !== false) {
-            $res['all']['PROCESSING.RETURN'] = html_entity_decode($this->_getHelper('heidelpay')->__('HP_PNO_ERROR'));
+        if (isset($res['all']['PROCESSING.RETURN.CODE'])) {
+            if (strpos($res['all']['PROCESSING.RETURN.CODE'], '100.400.110') !== false) {
+                $res['all']['PROCESSING.RETURN'] = html_entity_decode($this->_getHelper('heidelpay')->__('HP_PNO_ERROR'));
+            }
         }
+        
 
         // IFrame erstmal leeren
         $this->getSession()->setHeidelpayIframe(false);

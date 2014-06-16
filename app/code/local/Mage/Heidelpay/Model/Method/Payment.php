@@ -250,6 +250,7 @@ class Mage_Heidelpay_Model_Method_Payment extends Mage_Payment_Model_Method_Abst
             'country' => $billing->getCountry(),
             'email' => $email,
             'ip' => $this->getOrder(true)->getRemoteIp(),
+            'userid' => $userId,
         );
         if (empty($userData['ip'])) $userData['ip'] = $_SERVER['REMOTE_ADDR']; // Falls IP Leer, dann aus dem Server holen
         $payMethod = 'RG';

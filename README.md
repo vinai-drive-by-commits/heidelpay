@@ -1,5 +1,7 @@
-Kirchbergerknorr Heidelpay 14.01.08
-===================================
+Kirchbergerknorr Heidelpay
+==========================
+(based on version 14.01.08)
+------
 
 Heidelberger Payment GmbH
 
@@ -30,6 +32,8 @@ List of payment methods and services:
 
 Version Log
 -----------
+
+There have been a number of smaller fixes and updates since then. Please refer to the [releases page on the github repository](https://github.com/kirchbergerknorr/heidelpay/releases) for more information. 
 
 **14.01.08**
 

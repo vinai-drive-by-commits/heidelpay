@@ -245,7 +245,7 @@ class Mage_Heidelpay_PaymentController extends Mage_Core_Controller_Front_Action
                 $this->_order->save();
             }
 
-            $this->restock($_GET['pc']);
+            $this->restock(Mage::app()->getRequest()->getParam('pc'));
 
             // set quote to active
             if ($quoteId = $this->getCheckout()->getQuoteId()) {
@@ -294,7 +294,7 @@ class Mage_Heidelpay_PaymentController extends Mage_Core_Controller_Front_Action
                 $payment = $this->getHPPayment();
             }
 
-            $this->restock($_GET['pc']);
+            $this->restock(Mage::app()->getRequest()->getParam('pc'));
 
             $params = Mage::app()->getRequest()->getParams();
             Mage::log("Heidelpay - errorAction: getParams() ");
